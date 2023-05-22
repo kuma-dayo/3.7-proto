@@ -15,10 +15,8 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 syntax = "proto3";
-message IEFNJJOADGD {
-	uint32 level = 1;
-	uint32 exp = 2;
-	uint32 promote_level = 3;
-	uint32 BIHLFHIHLOM = 4;
-	repeated uint32 FBGGAFBHNJG = 5;
+import "MaterialDeleteInfo.proto";
+message Material {
+	uint32 count = 1;
+	MaterialDeleteInfo delete_info = 2;
 }

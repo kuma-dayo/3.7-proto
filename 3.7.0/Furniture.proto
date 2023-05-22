@@ -15,12 +15,6 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 syntax = "proto3";
-import "IEFNJJOADGD.proto";
-import "ONOPOBPAHOE.proto";
-message JFNFEJHPPKA {
-	bool is_locked = 3;
-	oneof HHPPCFFDHJP {
-		IEFNJJOADGD LMBIOFFOFIJ = 1;
-		ONOPOBPAHOE FAJIMHIOAKD = 2;
-	}
+message Furniture {
+	uint32 count = 1;
 }

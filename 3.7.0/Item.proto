@@ -15,15 +15,15 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 syntax = "proto3";
-import "KOKDLGLHBDK.proto";
-import "JFNFEJHPPKA.proto";
-import "BILANGJEJAM.proto";
-message EBCKEILKJOG {
+import "Material.proto";
+import "Equip.proto";
+import "Furniture.proto";
+message Item {
 	uint32 item_id = 1;
 	uint64 guid = 2;
-	oneof DOCDJJDCADK {
-		KOKDLGLHBDK PLOKCCCCNEN = 5;
-		JFNFEJHPPKA GKKJEMAKLCB = 6;
-		BILANGJEJAM JNEIPKFPCJI = 7;
+	oneof detail {
+		Material material = 5;
+		Equip equip = 6;
+		Furniture furniture = 7;
 	}
 }
