@@ -15,8 +15,13 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 syntax = "proto3";
-message EMABGGFKFDB {
-	float EBMOOBKKNJI = 1;
-	float ICOFJKEKEIM = 2;
-	float BOGEINCFLCP = 3;
+import "Vector.proto";
+message OneoffGatherPointDetectorData {
+	uint32 config_id = 11;
+	bool is_all_collected = 9;
+	uint32 group_id = 10;
+	bool is_hint_valid = 4;
+	Vector hint_center_pos = 3;
+	uint32 hint_radius = 8;
+	uint32 material_id = 13;
 }
